@@ -138,6 +138,7 @@ nav.scrolled { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); }
     letter-spacing: 2px;
     margin-bottom: 1rem;
 }
+.page-hero p { color: rgba(255,255,255,0.9); max-width: 700px; margin-left: auto; margin-right: auto; }
 
 /* Full-height hero for homepage */
 #home {
@@ -291,6 +292,11 @@ footer { background: var(--dark-black); color: var(--white); padding: clamp(40px
     .contact-info { order: 1; }
     .contact-form { order: 2; }
     .hero-buttons { justify-content: center; flex-direction: row; }
+}
+
+@media (max-width: 767px) {
+    .about-image { order: 1; }
+    .about-text { order: 2; }
 }
 
 @media (max-width: 767px) {
