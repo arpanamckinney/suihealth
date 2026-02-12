@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About SUI Health — Our Mission to Personalize ALS Treatment</title>
     <meta name="description" content="Learn about SUI Health's mission to develop personalized treatments for ALS and neurodegenerative diseases using patient-derived cellular models and cutting-edge research.">
-    <meta name="keywords" content="SUI Health mission, ALS personalized medicine, neurodegenerative disease nonprofit, patient-centered ALS care, personalized neuronal models">
+    <meta name="keywords" content="SUI Health mission, ALS personalized medicine, neurodegenerative disease nonprofit, patient-centered ALS care, personalized neuronal models, TDP-43, iPSC motor neurons">
     <link rel="canonical" href="https://www.suihealth.com/about">
-
     <meta property="og:title" content="About SUI Health — Our Mission to Personalize ALS Treatment">
     <meta property="og:description" content="Learn how SUI Health is pioneering personalized ALS treatments using patient-derived cellular models.">
     <meta property="og:url" content="https://www.suihealth.com/about">
@@ -21,6 +20,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* About page specific styles */
+        .why-section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .why-block {
+            margin-bottom: 3rem;
+        }
+        .why-block h3 {
+            color: var(--dark-black);
+            font-size: clamp(1.3rem, 3vw, 1.6rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .why-block p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--medium-black);
+        }
+        .why-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+        .why-intro p {
+            font-size: 1.15rem;
+            color: var(--gray);
+        }
+    </style>
 </head>
 <body>
     <div class="loader" id="loader"><div class="loader-spinner"></div></div>
@@ -28,18 +58,18 @@
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">
+            <a href="/" class="logo">
                 <img src="https://suihealth-website.s3.us-east-2.amazonaws.com/photos/logo-white.png" alt="SUI Health Logo" class="logo-img">
                 <span><span class="logo-line1">SUI Health -</span> <span class="logo-line2">Serving Us Individually</span></span>
             </a>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="programs.html">Programs</a>
-                <a href="get-involved.html">Get Involved</a>
-                <a href="team.html">Team</a>
-                <a href="contact.html">Contact</a>
-                <a href="donate.html" class="btn-donate">Donate Now</a>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/programs">Programs</a>
+                <a href="/get-involved">Get Involved</a>
+                <a href="/team">Team</a>
+                <a href="/contact">Contact</a>
+                <a href="/donate" class="btn-donate">Donate Now</a>
             </div>
             <div class="mobile-menu" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></div>
         </div>
@@ -49,19 +79,19 @@
     <section class="page-hero">
         <div class="container">
             <div class="section-subtitle">Our Story</div>
-            <h1>About SUI Health</h1>
+            <h1>SUI Health - Serving Us Individually</h1>
             <p>Personalized medicine for neurodegenerative diseases, rooted in each patient's own biology.</p>
         </div>
     </section>
 
-    <!-- Mission -->
+    <!-- Mission Section -->
     <section>
         <div class="container">
             <div class="about-content fade-in">
                 <div class="about-text">
                     <h3>Our Mission</h3>
                     <p>After having seen firsthand the devastating impact of ALS, both in the clinic and within our own families, we set out to build something that could meaningfully help patients today. We believe that the future of ALS care lies in personalized medicine rooted in each patient's own biology.</p>
-                    <p>Using cells directly from the patient, SUI Health creates personalized neuronal models that capture the specific mechanisms driving an individual's disease. These models allow us to test therapies in a way that is personalized and clinically relevant.</p>
+                    <p>Using cells directly from the patient, SUI Health creates personalized neuronal models that capture the specific mechanisms driving an individual's disease.</p>
                 </div>
                 <div class="about-image">
                     <img src="https://suihealth-website.s3.us-east-2.amazonaws.com/photos/GU_LC3B-noBaf_1006 - Deconvolved, Type Automatic_2.png" alt="Fluorescent microscopy image of neurons used in personalized ALS disease modeling at SUI Health">
@@ -70,29 +100,46 @@
         </div>
     </section>
 
-    <!-- Values -->
+    <!-- Why Personalized Medicine Section -->
     <section>
         <div class="container">
             <div class="section-header">
-                <div class="section-subtitle">What Guides Us</div>
-                <h2>Our Core Values</h2>
+                <div class="section-subtitle">The Science</div>
+                <h2>Why Personalized Medicine</h2>
             </div>
-            <div class="values-grid fade-in">
-                <div class="value-card">
-                    <i class="fas fa-users"></i>
-                    <h4>Patient-Centered Care</h4>
-                    <p>Every decision begins with the patient's needs. We believe individuals living with neurodegenerative disease deserve tailored, actionable solutions that address their unique circumstances.</p>
+
+            <div class="about-values fade-in" style="margin-bottom: 3rem;">
+                <img src="https://suihealth-website.s3.us-east-2.amazonaws.com/photos/ratsplosion.png" alt="Visualization of neurodegenerative disease pathology in personalized ALS research at SUI Health">
+            </div>
+
+            <div class="why-section fade-in">
+
+                <div class="why-block">
+                    <h3>Every patient's ALS is different</h3>
+                    <p>More than 40 genes have been linked to ALS, affecting processes as diverse as protein degradation, RNA metabolism, and axonal transport. Even patients with the same genetic mutation can have vastly different disease courses. Two people in the same clinic may share a diagnosis but have almost nothing in common at the molecular level.</p>
                 </div>
-                <div class="value-card">
-                    <i class="fas fa-handshake"></i>
-                    <h4>Collaboration</h4>
-                    <p>Discoveries happen when we work together. We are excited to collaborate with academia, industry and patient communities to accelerate discovery and expand access to treatments.</p>
+
+                <div class="why-block">
+                    <h3>One-size-fits-all treatment has not worked</h3>
+                    <p>Over 70 drugs have been tested in major ALS clinical trials. The vast majority have failed, not necessarily because the drugs don't work, but because they were tested across populations so diverse that any real therapeutic signal was drowned out by biological noise. Effective treatments may already exist but remain invisible when tested in broad, mixed populations.</p>
                 </div>
-                <div class="value-card">
-                    <i class="fas fa-shield-alt"></i>
-                    <h4>Ethical Integrity</h4>
-                    <p>We ensure patient privacy, informed consent, and responsible use of biological materials. We are committed to conducting responsible science with the highest standards.</p>
+
+                <div class="why-block">
+                    <h3>The biology demands an individual approach</h3>
+                    <p>At the molecular level, up to 97% of ALS patients share one common feature: the pathological aggregation of TDP-43 protein, which mislocalizes from the nucleus to the cytoplasm in motor neurons. But how a patient arrives at that pathology, which upstream pathways are disrupted, and which therapeutic interventions can reverse or slow the process differ from patient to patient. We need to move beyond asking "does this drug work for ALS?" and start asking "does this drug work for <em>this patient's</em> ALS?"</p>
                 </div>
+
+                <div class="why-block">
+                    <h3>The technology exists today</h3>
+                    <p>From a small sample of blood or skin, a patient's cells can be reprogrammed into motor neurons, the very cells lost in ALS. These lab-grown neurons carry the patient's complete genetic makeup and behave like their own cells would. Using advanced automated microscopy, we can track thousands of individual neurons over days to weeks, observe what's going wrong, and test candidate treatments directly against that patient's biology.</p>
+                </div>
+
+                <div class="why-block">
+                    <h3>This is what SUI Health was built to do</h3>
+                    <p>SUI Health exists to close the gap between what the science makes possible and what patients actually receive. We are building a personalized therapeutic screening platform that takes each patient's own neurons, identifies the molecular drivers of their disease, and screens FDA-approved drugs with established human safety data against their individual biology.</p>
+                    <p>Every ALS patient deserves to know which therapies have the best chance of working for them: not on average, not in a mouse, but in their own cells. That is what personalized medicine means, and that is what we are building.</p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -100,11 +147,12 @@
     <!-- CTA -->
     <section>
         <div class="container" style="text-align: center;">
-            <h2>Ready to Make a Difference?</h2>
+            <img src="https://suihealth-website.s3.us-east-2.amazonaws.com/photos/logo-white.png" alt="SUI Health Logo" style="height: 60px; margin-bottom: 2rem; filter: brightness(0) saturate(100%) invert(15%) sepia(20%) saturate(1000%) hue-rotate(190deg);">
+            <h2>Help Us Fight ALS, One Patient at a Time</h2>
             <p style="max-width: 600px; margin: 0 auto 2rem;">Join us in advancing personalized medicine for neurodegenerative diseases.</p>
             <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                <a href="donate.html" class="btn btn-primary"><i class="fas fa-heart"></i> Donate Now</a>
-                <a href="contact.html" class="btn btn-dark"><i class="fas fa-envelope"></i> Contact Us</a>
+                <a href="/donate" class="btn btn-primary"><i class="fas fa-heart"></i> Donate Now</a>
+                <a href="/contact" class="btn btn-dark"><i class="fas fa-envelope"></i> Contact Us</a>
             </div>
         </div>
     </section>
@@ -120,11 +168,11 @@
                 <div class="footer-column">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="programs.html">Our Programs</a></li>
-                        <li><a href="team.html">Our Team</a></li>
-                        <li><a href="donate.html">Donate</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/programs">Our Programs</a></li>
+                        <li><a href="/team">Our Team</a></li>
+                        <li><a href="/donate">Donate</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -133,6 +181,14 @@
             </div>
         </div>
     </footer>
-    <script src="main.js"></script>
+
+    <script>
+        window.addEventListener('load',()=>{setTimeout(()=>{document.getElementById('loader').classList.add('hidden');},500);});
+        window.addEventListener('scroll',()=>{const n=document.getElementById('navbar');if(window.scrollY>50)n.classList.add('scrolled');else n.classList.remove('scrolled');});
+        function toggleMobileMenu(){const nl=document.querySelector('.nav-links'),mi=document.querySelector('.mobile-menu i');if(nl.style.display==='flex'){nl.style.display='none';mi.classList.replace('fa-times','fa-bars');}else{nl.style.display='flex';nl.style.flexDirection='column';nl.style.position='absolute';nl.style.top='100%';nl.style.left='0';nl.style.right='0';nl.style.background='var(--dark-black)';nl.style.padding='20px';nl.style.borderRadius='0 0 15px 15px';mi.classList.replace('fa-bars','fa-times');}}
+        document.querySelectorAll('.nav-links a').forEach(l=>{l.addEventListener('click',()=>{if(window.innerWidth<768){document.querySelector('.nav-links').style.display='none';const i=document.querySelector('.mobile-menu i');if(i)i.classList.replace('fa-times','fa-bars');}});});
+        const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.1,rootMargin:'0px 0px -50px 0px'});
+        document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+    </script>
 </body>
 </html>
