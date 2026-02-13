@@ -6,10 +6,10 @@
     <title>About SUI Health — Our Mission to Personalize ALS Treatment</title>
     <meta name="description" content="Learn about SUI Health's mission to develop personalized treatments for ALS and neurodegenerative diseases using patient-derived cellular models and cutting-edge research.">
     <meta name="keywords" content="SUI Health mission, ALS personalized medicine, neurodegenerative disease nonprofit, patient-centered ALS care, personalized neuronal models, TDP-43, iPSC motor neurons">
-    <link rel="canonical" href="https://www.suihealth.com/about">
+    <link rel="canonical" href="https://www.suihealth.com/about.html">
     <meta property="og:title" content="About SUI Health — Our Mission to Personalize ALS Treatment">
     <meta property="og:description" content="Learn how SUI Health is pioneering personalized ALS treatments using patient-derived cellular models.">
-    <meta property="og:url" content="https://www.suihealth.com/about">
+    <meta property="og:url" content="https://www.suihealth.com/about.html">
     <meta property="og:type" content="website">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZKHD42PNMG"></script>
@@ -58,18 +58,18 @@
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="/" class="logo">
+            <a href="index.html" class="logo">
                 <img src="https://suihealth-website.s3.us-east-2.amazonaws.com/photos/logo-white.png" alt="SUI Health Logo" class="logo-img">
                 <span><span class="logo-line1">SUI Health -</span> <span class="logo-line2">Serving Us Individually</span></span>
             </a>
             <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/programs">Programs</a>
-                <a href="/get-involved">Get Involved</a>
-                <a href="/team">Team</a>
-                <a href="/contact">Contact</a>
-                <a href="/donate" class="btn-donate">Donate Now</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="programs.html">Programs</a>
+                <a href="get-involved.html">Get Involved</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html">Contact</a>
+                <a href="donate.html" class="btn-donate">Donate Now</a>
             </div>
             <div class="mobile-menu" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></div>
         </div>
@@ -85,8 +85,6 @@
     </section>
 
     <!-- Mission Section -->
-
- 
     <section>
         <div class="container">
                            <div class="section-header">
@@ -161,8 +159,8 @@
             <h2>Help Us Fight ALS, One Patient at a Time</h2>
             <p style="max-width: 600px; margin: 0 auto 2rem;">Join us in advancing personalized medicine for neurodegenerative diseases.</p>
             <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                <a href="/donate" class="btn btn-primary"><i class="fas fa-heart"></i> Donate Now</a>
-                <a href="/contact" class="btn btn-dark"><i class="fas fa-envelope"></i> Contact Us</a>
+                <a href="donate.html" class="btn btn-primary"><i class="fas fa-heart"></i> Donate Now</a>
+                <a href="contact.html" class="btn btn-dark"><i class="fas fa-envelope"></i> Contact Us</a>
             </div>
         </div>
     </section>
@@ -170,19 +168,21 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <h3>SUI Health - Serving Us Individually</h3>
-                    <p>Advancing personalized medicine for neurodegenerative diseases.</p>
+            <div class="footer-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start;">
+                <div class="footer-about" style="text-align: center;">
+                    <img src="https://suihealth-website.s3.us-east-2.amazonaws.com/photos/logo-white.png" alt="SUI Health Logo" style="height: 40px; margin-bottom: 0.75rem;">
+                    <h3 style="margin-bottom: 0.25rem;">SUI Health</h3>
+                    <p style="color: rgba(255,255,255,0.8); margin-top: 0;">Serving Us Individually</p>
+                    <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem;">Advancing personalized medicine for neurodegenerative diseases.</p>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column" style="text-align: center;">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/programs">Our Programs</a></li>
-                        <li><a href="/team">Our Team</a></li>
-                        <li><a href="/donate">Donate</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -192,13 +192,6 @@
         </div>
     </footer>
 
-    <script>
-        window.addEventListener('load',()=>{setTimeout(()=>{document.getElementById('loader').classList.add('hidden');},500);});
-        window.addEventListener('scroll',()=>{const n=document.getElementById('navbar');if(window.scrollY>50)n.classList.add('scrolled');else n.classList.remove('scrolled');});
-        function toggleMobileMenu(){const nl=document.querySelector('.nav-links'),mi=document.querySelector('.mobile-menu i');if(nl.style.display==='flex'){nl.style.display='none';mi.classList.replace('fa-times','fa-bars');}else{nl.style.display='flex';nl.style.flexDirection='column';nl.style.position='absolute';nl.style.top='100%';nl.style.left='0';nl.style.right='0';nl.style.background='var(--dark-black)';nl.style.padding='20px';nl.style.borderRadius='0 0 15px 15px';mi.classList.replace('fa-bars','fa-times');}}
-        document.querySelectorAll('.nav-links a').forEach(l=>{l.addEventListener('click',()=>{if(window.innerWidth<768){document.querySelector('.nav-links').style.display='none';const i=document.querySelector('.mobile-menu i');if(i)i.classList.replace('fa-times','fa-bars');}});});
-        const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.1,rootMargin:'0px 0px -50px 0px'});
-        document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
