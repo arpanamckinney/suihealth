@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Personalized Medicine — SUI Health</title>
+    <meta name="description" content="Every patient's ALS is different. Learn why personalized medicine is the future of neurodegenerative disease treatment at SUI Health.">
+    <meta name="keywords" content="personalized medicine ALS, why personalized medicine, ALS treatment approach, TDP-43, patient-derived neurons, drug screening ALS, SUI Health">
+    <link rel="canonical" href="https://www.suihealth.com/why-personalized-medicine">
+    <meta property="og:title" content="Why Personalized Medicine — SUI Health">
+    <meta property="og:description" content="Every patient's ALS is different at the molecular level. The treatments they receive should be too.">
+    <meta property="og:url" content="https://www.suihealth.com/why-personalized-medicine">
+    <meta property="og:type" content="website">
+
+```
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZKHD42PNMG"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ZKHD42PNMG');</script>
+
+<!-- Fonts & Icons -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Shared Stylesheet -->
+<link rel="stylesheet" href="styles.css">
+
+<style>
+    /* Why Personalized Medicine — page-specific styles */
+
+    /* Stat bar between hero and content */
+    .stat-bar {
+        background: var(--dark-black);
+        padding: clamp(40px, 6vw, 60px) 0;
+    }
+    .stat-bar-inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--element-gap);
+        text-align: center;
+    }
+    .stat-number {
+        font-size: clamp(2.5rem, 5vw, 3.5rem);
+        font-weight: 800;
+        color: var(--accent-blue);
+        line-height: 1.1;
+    }
+    .stat-label {
+        font-size: clamp(0.9rem, 2vw, 1rem);
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 0.5rem;
+        line-height: 1.5;
+    }
+
+    /* Numbered content blocks (reuses .why-section/.why-block from about.html) */
+    .why-section {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .why-block {
+        margin-bottom: 0;
+    }
+    .why-block h3 {
+        color: var(--dark-black);
+        font-size: clamp(1.3rem, 3vw, 1.6rem);
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    .why-block p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: var(--medium-black);
+    }
+    .section-number {
+        display: inline-block;
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--primary-blue);
+        letter-spacing: 0.1em;
+        margin-bottom: 0.75rem;
+    }
+
+    /* Pull quote */
+    .pull-quote-section {
+        background: linear-gradient(135deg, var(--dark-black), var(--medium-black));
+        padding: clamp(50px, 8vw, 80px) 0;
+        text-align: center;
+    }
+    .pull-quote-section blockquote {
+        max-width: 750px;
+        margin: 0 auto;
+        font-size: clamp(1.25rem, 3vw, 1.6rem);
+        font-weight: 400;
+        font-style: italic;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.95);
+        padding: 0 var(--container-padding);
+    }
+    .pull-quote-section blockquote strong {
+        color: var(--accent-blue);
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    /* CTA buttons row */
+    .cta-buttons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 2.5rem;
+    }
+
+    @media (max-width: 767px) {
+        .stat-bar-inner {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        .cta-buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+        .cta-buttons .btn {
+            width: 100%;
+            max-width: 280px;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader"><div class="loader-spinner"></div></div>
+
+```
+<!-- Navigation -->
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="https://suihealth-website.s3.us-east-2.amazonaws.com/photos/logo-white.png" alt="SUI Health Logo" class="logo-img">
+            <span><span class="logo-line1">SUI Health -</span> <span class="logo-line2">Serving Us Individually</span></span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="get-involved.html">Get Involved</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact</a>
+            <a href="donate.html" class="btn-donate">Donate Now</a>
+        </div>
+        <div class="mobile-menu" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <div class="section-subtitle">The Science Behind Our Approach</div>
+        <h1>Why Personalized Medicine</h1>
+        <p>Every patient's ALS is different at the molecular level. The treatments they receive should be too.</p>
+    </div>
+</section>
+
+<!-- Stat Bar -->
+<div class="stat-bar">
+    <div class="container">
+        <div class="stat-bar-inner">
+            <div class="fade-in">
+                <div class="stat-number">40+</div>
+                <div class="stat-label">Genes linked to ALS, affecting<br>diverse biological pathways</div>
+            </div>
+            <div class="fade-in">
+                <div class="stat-number">70+</div>
+                <div class="stat-label">Drugs tested in major trials —<br>the vast majority failed</div>
+            </div>
+            <div class="fade-in">
+                <div class="stat-number">97%</div>
+                <div class="stat-label">Of ALS patients share<br>TDP-43 pathology</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Section 1: Every patient's ALS is different -->
+<section>
+    <div class="container">
+        <div class="why-section fade-in">
+            <div class="section-number">01</div>
+            <div class="why-block">
+                <h3>Every patient's ALS is different</h3>
+                <p>More than 40 genes have been linked to ALS, affecting processes as diverse as protein degradation, RNA metabolism, and axonal transport. Even patients with the same genetic mutation can have vastly different disease courses.</p>
+                <p>Two people in the same clinic may share a diagnosis but have almost nothing in common at the molecular level.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 2: One-size-fits-all has not worked -->
+<section>
+    <div class="container">
+        <div class="why-section fade-in">
+            <div class="section-number">02</div>
+            <div class="why-block">
+                <h3>One-size-fits-all treatment has not worked</h3>
+                <p>Over 70 drugs have been tested in major ALS clinical trials. The vast majority have failed — not necessarily because the drugs don't work, but because they were tested across populations so diverse that any real therapeutic signal was drowned out by biological noise.</p>
+                <p>Effective treatments may already exist but remain invisible when tested in broad, mixed populations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 3: The biology demands an individual approach -->
+<section>
+    <div class="container">
+        <div class="why-section fade-in">
+            <div class="section-number">03</div>
+            <div class="why-block">
+                <h3>The biology demands an individual approach</h3>
+                <p>At the molecular level, up to 97% of ALS patients share one common feature: the pathological aggregation of TDP-43 protein, which mislocalizes from the nucleus to the cytoplasm in motor neurons.</p>
+                <p>But how a patient arrives at that pathology — which upstream pathways are disrupted, and which therapeutic interventions can reverse or slow the process — differ from patient to patient.</p>
+                <p>We need to move beyond asking "does this drug work for ALS?" and start asking "does this drug work for <em>this patient's</em> ALS?"</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 4: The technology exists today -->
+<section>
+    <div class="container">
+        <div class="why-section fade-in">
+            <div class="section-number">04</div>
+            <div class="why-block">
+                <h3>The technology exists today</h3>
+                <p>From a small sample of blood or skin, a patient's cells can be reprogrammed into motor neurons — the very cells lost in ALS. These lab-grown neurons carry the patient's complete genetic makeup and behave like their own cells would.</p>
+                <p>Using advanced automated microscopy, we can track thousands of individual neurons over days to weeks, observe what's going wrong, and test candidate treatments directly against that patient's biology.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pull Quote -->
+<div class="pull-quote-section">
+    <div class="container fade-in">
+        <blockquote>
+            "Every ALS patient deserves to know which therapies have the best chance of working for them — <strong>not on average, not in a mouse, but in their own cells.</strong>"
+        </blockquote>
+    </div>
+</div>
+
+<!-- Section 5: This is what SUI Health was built to do -->
+<section>
+    <div class="container">
+        <div class="section-header">
+            <div class="section-subtitle">Our Purpose</div>
+            <h2>This Is What SUI Health Was Built to Do</h2>
+        </div>
+        <div class="why-section fade-in" style="text-align: center;">
+            <p>SUI Health exists to close the gap between what the science makes possible and what patients actually receive.</p>
+            <p>We are building a personalized therapeutic screening platform that takes each patient's own neurons, identifies the molecular drivers of their disease, and screens FDA-approved drugs with established human safety data against their individual biology.</p>
+            <p>That is what personalized medicine means, and that is what we are building.</p>
+            <div class="cta-buttons">
+                <a href="programs.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Explore Our Programs</a>
+                <a href="donate.html" class="btn btn-dark"><i class="fas fa-heart"></i> Support Our Work</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start;">
+            <div class="footer-about" style="text-align: center;">
+                <img src="https://suihealth-website.s3.us-east-2.amazonaws.com/photos/logo-white.png" alt="SUI Health Logo" style="height: 40px; margin-bottom: 0.75rem;">
+                <h3 style="margin-bottom: 0.25rem;">SUI Health</h3>
+                <p style="color: rgba(255,255,255,0.8); margin-top: 0;">Serving Us Individually</p>
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem;">Advancing personalized medicine for neurodegenerative diseases.</p>
+            </div>
+            <div class="footer-column" style="text-align: center;">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/programs">Our Programs</a></li>
+                    <li><a href="/team">Our Team</a></li>
+                    <li><a href="/donate">Donate</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SUI Health - Serving Us Individually. All rights reserved. | EIN: 39-4228782 | A 501(c)(3) Nonprofit Organization</p>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+```
+
+</body>
+</html>
