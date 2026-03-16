@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team — Scientists & Doctors Behind SUI Health's ALS Research</title>
-    <meta name="description" content="Meet the co-founders of SUI Health: Dr. Tristan McKinney, Dr. Sami Barmada, and Dr. Arpana Arjun McKinney — experts in machine learning, neurology, and stem cell biology fighting ALS.">
-    <meta name="keywords" content="SUI Health team, ALS researchers, Dr. Sami Barmada, Dr. Tristan McKinney, Dr. Arpana McKinney, neurodegenerative disease scientists">
+    <meta name="description" content="Meet the co-founders and advisors of SUI Health: Dr. Tristan McKinney, Dr. Sami Barmada, Dr. Arpana Arjun McKinney, and our advisory board — experts in machine learning, neurology, stem cell biology, and more.">
+    <meta name="keywords" content="SUI Health team, ALS researchers, Dr. Sami Barmada, Dr. Tristan McKinney, Dr. Arpana McKinney, Dr. Namita Goyal, Suresh Subramani, neurodegenerative disease scientists">
     <link rel="canonical" href="https://www.suihealth.com/team.html">
 
     <meta property="og:title" content="Our Team — Scientists & Doctors Behind SUI Health's ALS Research">
@@ -21,6 +21,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Advisor-specific styles */
+        .advisors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--element-gap);
+        }
+        .advisor-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .advisor-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        .advisor-card-image {
+            height: 260px;
+            background: linear-gradient(135deg, var(--light-black), var(--secondary-blue));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .advisor-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .advisor-card-content {
+            padding: clamp(18px, 3vw, 25px);
+        }
+        .advisor-card-content h3 {
+            font-size: clamp(1.15rem, 2.5vw, 1.3rem);
+            margin-bottom: 0.25rem;
+        }
+        .advisor-card-role {
+            color: var(--light-black);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+        }
+        .advisor-card-bio {
+            color: var(--gray);
+            line-height: 1.6;
+            margin-bottom: 0;
+            font-size: clamp(0.9rem, 2.5vw, 0.95rem);
+        }
+        .advisor-disclaimer {
+            color: var(--gray);
+            font-size: 0.85rem;
+            font-style: italic;
+            margin-top: 0.5rem;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 767px) {
+            .advisors-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="loader" id="loader"><div class="loader-spinner"></div></div>
@@ -52,6 +119,7 @@
         </div>
     </section>
 
+    <!-- Co-Founders -->
     <section>
         <div class="container">
             <div class="team-grid fade-in">
@@ -91,17 +159,73 @@
         </div>
     </section>
 
-<section>
-    <div class="container" style="text-align: center;">
-        <img src="https://suihealth-website.s3.us-east-2.amazonaws.com/photos/logo-white.png" alt="SUI Health Logo" style="height: 60px; margin-bottom: 2rem; filter: brightness(0) saturate(100%) invert(15%) sepia(20%) saturate(1000%) hue-rotate(190deg);">
-            <h2>Together, We Can Change the Future of ALS</h2>
-        <p style="max-width: 600px; margin: 0 auto 2rem;">Join us in advancing personalized medicine for neurodegenerative diseases.</p>
-        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-            <a href="donate.html" class="btn btn-primary"><i class="fas fa-heart"></i> Donate Now</a>
-            <a href="contact.html" class="btn btn-dark"><i class="fas fa-envelope"></i> Contact Us</a>
+    <!-- Advisors -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Guidance & Expertise</div>
+                <h2>Advisors</h2>
+            </div>
+            <div class="advisors-grid fade-in">
+
+                <div class="advisor-card">
+                    <div class="advisor-card-image">
+                        <img src="https://suihealth-website.s3.us-east-2.amazonaws.com/photos/suresh-subramani.jpg" alt="Dr. Suresh Subramani, Advisor to SUI Health">
+                    </div>
+                    <div class="advisor-card-content">
+                        <h3>Dr. Suresh Subramani</h3>
+                        <div class="advisor-card-role">Former Executive Vice Chancellor for Academic Affairs and Distinguished Professor of Molecular Biology, UC San Diego</div>
+                    </div>
+                </div>
+
+                <div class="advisor-card">
+                    <div class="advisor-card-image">
+                        <img src="https://suihealth-website.s3.us-east-2.amazonaws.com/photos/namita-goyal.jpg" alt="Dr. Namita Goyal, Advisor to SUI Health">
+                    </div>
+                    <div class="advisor-card-content">
+                        <h3>Dr. Namita Goyal</h3>
+                        <div class="advisor-card-role">Professor of Neurology, UC Irvine — ALS clinician and lead investigator for clinical trials </div>
+                    </div>
+                </div>
+<!--
+                <div class="advisor-card">
+                    <div class="advisor-card-image">
+                        <img src="https://suihealth-website.s3.us-east-2.amazonaws.com/photos/amy-jacobson.jpg" alt="Amy Jacobson, Advisor to SUI Health">
+                    </div>
+                    <div class="advisor-card-content">
+                        <h3>Amy Jacobson</h3>
+                        <div class="advisor-card-role">Director of Microbiome Therapies, Stanford — translational scientist with IND experience</div>
+
+                    </div>
+                </div>
+-->
+                <div class="advisor-card">
+                    <div class="advisor-card-image">
+                        <img src="https://suihealth-website.s3.us-east-2.amazonaws.com/photos/nat-arjun.jpg" alt="Natarajan Arjun, Advisor to SUI Health">
+                    </div>
+                    <div class="advisor-card-content">
+                        <h3>Nat Arjun</h3>
+                        <div class="advisor-card-role">Former VP/GM, Asian Operations, Mattel Toys - Financial & Operations Advisor </div>
+                    </div>
+                </div>
+
+            </div>
+            <p class="advisor-disclaimer" style="text-align: center; margin-top: 2.5rem;">* All advisors serve in an unpaid capacity. Institutional affiliations are provided for identification purposes only and do not constitute endorsements by those institutions.</p>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- CTA -->
+    <section>
+        <div class="container" style="text-align: center;">
+            <img src="https://suihealth-website.s3.us-east-2.amazonaws.com/photos/logo-white.png" alt="SUI Health Logo" style="height: 60px; margin-bottom: 2rem; filter: brightness(0) saturate(100%) invert(15%) sepia(20%) saturate(1000%) hue-rotate(190deg);">
+                <h2>Together, We Can Change the Future of ALS</h2>
+            <p style="max-width: 600px; margin: 0 auto 2rem;">Join us in advancing personalized medicine for neurodegenerative diseases.</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="donate.html" class="btn btn-primary"><i class="fas fa-heart"></i> Donate Now</a>
+                <a href="contact.html" class="btn btn-dark"><i class="fas fa-envelope"></i> Contact Us</a>
+            </div>
+        </div>
+    </section>
 
     <footer>
     <div class="container">
